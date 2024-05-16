@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShapesLibrary
 {
-    public class BaseShap
+    public abstract class BaseShap
     {
         public string NameShape {  get; set; }
 
@@ -15,5 +15,6 @@ namespace ShapesLibrary
             NameShape = nameShape;
         }
 
+        public abstract double CalcSquare();
     }
 }

@@ -15,7 +15,7 @@ namespace ShapesLibrary
             RadiusCircle = radiusCircle;
         }
 
-        public double SquareCircle()
+        public override double CalcSquare()
         {
             return Math.PI * Math.Pow(RadiusCircle, 2);
         }

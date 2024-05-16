@@ -19,7 +19,7 @@ namespace ShapesLibrary
             this.c = c;
         }
 
-        public double SquareTriangle()
+        public override double CalcSquare()
         {
             double p = (a + b + c) / 2;
             double square = Math.Round(Math.Sqrt(p * (p - a) * (p - b) * (p - a)), 1);
