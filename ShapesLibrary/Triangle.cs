@@ -22,8 +22,27 @@ namespace ShapesLibrary
         public override double CalcSquare()
         {
             double p = (a + b + c) / 2;
-            double square = Math.Round(Math.Sqrt(p * (p - a) * (p - b) * (p - a)), 1);
+            double square = Math.Sqrt(p * (p - a) * (p - b) * (p - a));
             return square;
+        }
+        public bool TriangleRectangular()
+        {
+            if(a > b & a > c)
+            {
+                if(Math.Pow(a, 2) == Math.Pow(b, 2) + Math.Pow(c, 2))
+                {  return true; }
+            }
+            if (b > a & b > c)
+            {
+                if (Math.Pow(b, 2) == Math.Pow(a, 2) + Math.Pow(c, 2))
+                { return true; }
+            }
+            if (c > b & c > a)
+            {
+                if (Math.Pow(c, 2) == Math.Pow(b, 2) + Math.Pow(a, 2))
+                { return true; }
+            }
+            return false;
         }
     }
 }
