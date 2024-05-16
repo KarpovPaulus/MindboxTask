@@ -1,4 +1,4 @@
-##Задача на SQL
+<h1>Задача на SQL</h1>
 
 ~~~sql
 CREATE TABLE Products(
